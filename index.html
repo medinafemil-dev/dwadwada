@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emil Medina - Portafolio Profesional</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="brand-initials">EM</span>
+                <span class="brand-name">Emil Medina</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Inicio</a>
+                <a href="#sobre-mi" class="nav-link"><i class="fa-solid fa-user"></i> Sobre Mí</a>
+                <a href="#habilidades" class="nav-link"><i class="fa-solid fa-code"></i> Habilidades</a>
+                <a href="#educacion" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Educación</a>
+                <a href="#servicios" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Servicios</a>
+                <a href="#contacto" class="nav-link"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Contactar</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <i class="fa-solid fa-circle-check"></i> Disponible para Oportunidades Laborales
+                </div>
+                <h1 class="hero-title">
+                    Hola, soy <span class="highlight-blue">Emil Medina</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Técnico Informático & Soporte Técnico | Desarrollador Web Full Stack
+                </h2>
+                <p class="hero-description">
+                    Joven proactivo de 19 años apasionado por la tecnología, el desarrollo de soluciones digitales y la gestión de infraestructura tecnológica. Orientado al aprendizaje rápido y la resolución eficiente de problemas técnicos.
+                </p>
+
+                <!-- Quick Info Badges -->
+                <div class="quick-info-grid">
+                    <div class="info-badge">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <div>
+                            <span class="info-label">Edad</span>
+                            <span class="info-value">19 años</span>
+                        </div>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="info-label">Ubicación</span>
+                            <span class="info-value">San Juan Bosco, Santo Domingo, DN</span>
+                        </div>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span class="info-label">Teléfono</span>
+                            <span class="info-value">(849) 919-4410</span>
+                        </div>
+                    </div>
+                    <div class="info-badge">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span class="info-label">Correo</span>
+                            <span class="info-value">medinafemil@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-paper-plane"></i> Ponernos en Contacto
+                    </a>
+                    <a href="#habilidades" class="btn btn-secondary btn-lg">
+                        <i class="fa-solid fa-layer-group"></i> Ver Competencias
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card-wrapper">
+                <div class="profile-card">
+                    <!-- Foto de Perfil (Coloca la ruta de tu foto en el src) -->
+                    <div class="profile-photo-container">
+                        <img src="/img/fotocv.png" alt="Foto de Emil Medina" class="profile-photo">
+                    </div>
+                    <h3 class="profile-name">Emil Medina</h3>
+                    <p class="profile-tag">Soporte & Desarrollo Web</p>
+                    <div class="profile-skills-tags">
+                        <span class="tag"><i class="fa-brands fa-html5"></i> HTML5/CSS3</span>
+                        <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tag"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tag"><i class="fa-solid fa-database"></i> SQL / MongoDB</span>
+                        <span class="tag"><i class="fa-solid fa-desktop"></i> Soporte IT</span>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="btn btn-outline btn-block" onclick="copyContact('medinafemil@gmail.com', 'Correo copiado al portapapeles')">
+                            <i class="fa-solid fa-copy"></i> Copiar Correo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section class="section sobre-mi-section" id="sobre-mi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fa-solid fa-address-card"></i> Perfil Profesional</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text-card">
+                    <h3><i class="fa-solid fa-bullseye"></i> Mi Objetivo y Perfil</h3>
+                    <p>
+                        Soy un <strong>joven proactivo de 19 años</strong> con sólida formación técnica y pasión por el área de la informática y la tecnología. Actualmente resido en <strong>San Juan Bosco, Santo Domingo, DN</strong>.
+                    </p>
+                    <p>
+                        Cuento con conocimientos en desarrollo de soluciones digitales, soporte técnico y gestión de herramientas informáticas. Me caracterizo por mi capacidad analítica para la resolución de problemas, facilidad para adaptarme a nuevas tecnologías y un aprendizaje rápido para aportar valor eficientemente a equipos de tecnología.
+                    </p>
+                    <div class="languages-box">
+                        <h4><i class="fa-solid fa-language"></i> Idiomas</h4>
+                        <div class="lang-item">
+                            <div class="lang-info">
+                                <span><strong>Español:</strong> Nativo</span>
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="lang-info">
+                                <span><strong>Inglés:</strong> B1 Certificate (EFSET) - Comprensión técnica de lectura</span>
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <h4>Residencia</h4>
+                        <p>San Juan Bosco, Santo Domingo, DN</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-user-check"></i></div>
+                        <h4>Edad</h4>
+                        <p>19 Años</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h4>Especialidad</h4>
+                        <p>Desarrollo Web & Soporte Técnico</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h4>Certificaciones</h4>
+                        <p>INDOTEL, Microsoft, EFSET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section class="section habilidades-section bg-light" id="habilidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fa-solid fa-gears"></i> Conocimientos & Competencias</span>
+                <h2 class="section-title">Habilidades Técnicas y Profesionales</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Technical Skills Category Cards -->
+            <div class="skills-categories-grid">
+
+                <!-- Web & Backend -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Desarrollo Web & Backend</h3>
+                    </div>
+                    <p class="category-desc">Creación de sitios y aplicaciones web dinámicas y estructuradas.</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span> <span>Avanzado</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-brands fa-js"></i> JavaScript</span> <span>Intermedio</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-brands fa-react"></i> React</span> <span>Intermedio</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-brands fa-node-js"></i> Node.js & Express</span> <span>Intermedio</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 78%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-brands fa-php"></i> PHP</span> <span>Práctico</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Bases de Datos & Estructuración</h3>
+                    </div>
+                    <p class="category-desc">Diseño, lógica y gestión de datos relacionales y no relacionales.</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-solid fa-leaf"></i> MongoDB</span> <span>Intermedio</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 82%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-solid fa-server"></i> SQL (Consultas & Tablas)</span> <span>Intermedio</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-solid fa-diagram-project"></i> Lógica de Programación</span> <span>Avanzado</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-solid fa-network-wired"></i> Diseño de DB</span> <span>Intermedio</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soporte & Sistemas -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Soporte & Sistemas</h3>
+                    </div>
+                    <p class="category-desc">Mantenimiento, diagnóstico y configuración de infraestructura IT.</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-solid fa-bug"></i> Diagnóstico e Incidencias</span> <span>Avanzado</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-solid fa-microchip"></i> Mantenimiento Hardware/Software</span> <span>Avanzado</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span><i class="fa-brands fa-windows"></i> Windows / <i class="fa-brands fa-linux"></i> Linux OS</span> <span>Avanzado</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soft Skills / Competencias -->
+            <div class="soft-skills-section">
+                <h3 class="soft-title"><i class="fa-solid fa-brain"></i> Competencias Profesionales</h3>
+                <div class="soft-grid">
+                    <div class="soft-card">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h4>Pensamiento Analítico</h4>
+                        <p>Resolución sistemática de problemas informáticos y analíticos.</p>
+                    </div>
+                    <div class="soft-card">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h4>Manejo de Herramientas</h4>
+                        <p>Estructuración y gestión eficiente de utilidades digitales.</p>
+                    </div>
+                    <div class="soft-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Aprendizaje Autónomo</h4>
+                        <p>Rápida adaptabilidad a nuevas tecnologías y frameworks.</p>
+                    </div>
+                    <div class="soft-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h4>Trabajo en Equipo</h4>
+                        <p>Comunicación técnica clara y colaboración efectiva.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Educación Section -->
+    <section class="section educacion-section" id="educacion">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Formación y Logros</span>
+                <h2 class="section-title">Educación & Certificaciones</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year"><i class="fa-regular fa-calendar-days"></i> 2026</span>
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <p class="timeline-institution"><i class="fa-solid fa-building-columns"></i> INDOTEL</p>
+                        <p class="timeline-text">Capacitación especializada en arquitectura de aplicaciones web, tecnologías frontend (HTML5, CSS3, JS, React) y backend (Node.js, Express, PHP, DBs).</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-robot"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year"><i class="fa-regular fa-calendar-days"></i> 2026</span>
+                        <h3>IA Responsable y Prompt Engineering</h3>
+                        <p class="timeline-institution"><i class="fa-brands fa-microsoft"></i> Microsoft</p>
+                        <p class="timeline-text">Formación en principios de inteligencia artificial ética, diseño de prompts eficientes y aplicación de herramientas de IA en flujos de trabajo.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year"><i class="fa-regular fa-calendar-days"></i> 2026</span>
+                        <h3>English B1 Certificate</h3>
+                        <p class="timeline-institution"><i class="fa-solid fa-award"></i> EFSET</p>
+                        <p class="timeline-text">Certificación de nivel intermedio B1 de inglés, enfocado en comprensión técnica de lectura y documentación.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-badge"><i class="fa-solid fa-school"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year"><i class="fa-regular fa-calendar-days"></i> 2026</span>
+                        <h3>Bachiller Académico</h3>
+                        <p class="timeline-institution"><i class="fa-solid fa-graduation-cap"></i> Centro Educativo Enseña</p>
+                        <p class="timeline-text">Estudios de educación media completados con enfoque proactivo y rendimiento destacado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section class="section servicios-section bg-light" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fa-solid fa-briefcase"></i> Lo que puedo aportar</span>
+                <h2 class="section-title">Servicios & Soluciones</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="servicios-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Soporte Técnico Informático</h3>
+                    <p>Diagnóstico y resolución rápida de incidencias de hardware y software, mantenimiento preventivo y correctivo de equipos informáticos.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Diagnóstico de hardware/software</li>
+                        <li><i class="fa-solid fa-check"></i> Instalación y optimización de SO</li>
+                        <li><i class="fa-solid fa-check"></i> Limpieza y mantenimiento técnico</li>
+                    </ul>
+                </div>
+
+                <div class="service-card highlight-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web Full Stack</h3>
+                    <p>Construcción de sitios web modernos, adaptables a móviles (responsive design), interactivos y conectados con bases de datos relacionales o NoSQL.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Maquetación HTML5 & CSS3 moderna</li>
+                        <li><i class="fa-solid fa-check"></i> Frontend interactivo con React & JS</li>
+                        <li><i class="fa-solid fa-check"></i> API RESTful con Node.js & Express</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3>Configuración de Sistemas OS</h3>
+                    <p>Instalación, configuración y personalización de entornos operativos Windows y distribuciones Linux para uso profesional y laboral.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Entornos Windows y Linux</li>
+                        <li><i class="fa-solid fa-check"></i> Configuración de drivers y redes</li>
+                        <li><i class="fa-solid fa-check"></i> Asistencia en herramientas digitales</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="section contacto-section" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fa-solid fa-comments"></i> Hablemos</span>
+                <h2 class="section-title">Contacto Directo</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                
+                <div class="contact-info-card">
+                    <h3>¿Tienes un proyecto o vacante técnica?</h3>
+                    <p>Estoy disponible para integrarme a equipos de tecnología, brindar soporte informático o desarrollar soluciones web a medida.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <span class="detail-label">Nombre</span>
+                                <span class="detail-value">Emil Medina (19 años)</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="detail-label">Ubicación</span>
+                                <span class="detail-value">San Juan Bosco, Santo Domingo, DN</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="detail-label">Teléfono / WhatsApp</span>
+                                <a href="tel:8499194410" class="detail-value-link">(849) 919-4410</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="detail-label">Correo Electrónico</span>
+                                <a href="mailto:medinafemil@gmail.com" class="detail-value-link">medinafemil@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-copy-box">
+                        <button class="btn btn-outline btn-block" onclick="copyContact('medinafemil@gmail.com', '¡Correo copiado!')">
+                            <i class="fa-solid fa-envelope"></i> Copiar Correo
+                        </button>
+                        <button class="btn btn-outline btn-block" onclick="copyContact('(849) 919-4410', '¡Teléfono copiado!')">
+                            <i class="fa-solid fa-phone"></i> Copiar Teléfono
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3><i class="fa-solid fa-paper-plane"></i> Envíame un Mensaje</h3>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name"><i class="fa-solid fa-user-pen"></i> Tu Nombre</label>
+                            <input type="text" id="name" required placeholder="Ej. Juan Pérez">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fa-solid fa-at"></i> Tu Correo Electrónico</label>
+                            <input type="email" id="email" required placeholder="ejemplo@correo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject"><i class="fa-solid fa-tag"></i> Asunto</label>
+                            <input type="text" id="subject" required placeholder="Consulta / Propuesta de trabajo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fa-solid fa-comment-dots"></i> Mensaje</label>
+                            <textarea id="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                    <div id="form-feedback" class="form-feedback hidden"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="brand-initials">EM</span>
+                <span class="footer-name">Emil Medina</span>
+            </div>
+            <p class="footer-text">
+                Técnico Informático & Desarrollador Web Full Stack | San Juan Bosco, Santo Domingo, DN.
+            </p>
+            <div class="footer-copy">
+                &copy; 2026 Emil Medina. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Notificación</span>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
